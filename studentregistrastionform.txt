@@ -1,0 +1,46 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>STUDENT REGISIRATION FORM </h3>
+        <p>NAME:<input type="text" id="na" placeholder="enter your name"></p >
+        <p>PHONENUMBER:<input type="til" maxlength="10" minlength="1" id="ph" placeholder="enter your phone number"></p>
+        <p>EMAIL:<input type="email" id="em" placeholder="enter your email"></p>   
+        <p>ADDRESS:<input type="text" id="ad" placeholder="enter your address"></p >
+        <p>COLLEGE:<input type="text" id="co" placeholder="enter your college"></p>       
+        <p>AGE:<input type="text" id="age" placeholder="enter your age"></p>
+        <p id="dis"><button onclick="on()">login</button></p>
+    </form>
+    <script>
+        let N=document.getElementById("na");       
+        let P=document.getElementById("ph");       
+        let E=document.getElementById("em");        
+        let AD=document.getElementById("ad");  
+        let C=document.getElementById("co");  
+        let A=document.getElementById("age");  
+        function on(){
+            if(N.value==""||P.value==""||E.value==""||AD.value==""||C.value==""||A.value=="")
+            {
+                document.getElementById("dis").innerHTML="enter your details";
+
+            }
+            else
+            {
+                document.getElementById("dis").innerHTML="login successful"+"<br>"
+                +"STUDENT LOGIN INFO"+"<br>"
+                +"NAME:"+na.value+"<br>"
+                +"PHONE NUMBER:"+ph.value+"<br>"
+                +"EMAIL:"+em.value+"<br>"
+                +"ADDRES:"+ad.value+"<br>"
+                +"COLLAGE:"+co.value+"<br>"
+                +"AGE:"+age.value+"<br>";
+            }
+        }
+ </script>
+</body>
+</html>
